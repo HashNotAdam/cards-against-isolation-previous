@@ -7,7 +7,7 @@ Rails:
   Enabled: true
 
 AllCops:
-  TargetRubyVersion: 2.6.6
+  TargetRubyVersion: 2.6
   Exclude:
     - Guardfile
     - Rakefile
@@ -93,6 +93,8 @@ RSpec/BeforeAfterAll:
   Enabled: false
 
 RSpec/ExampleLength:
+  Exclude:
+    - spec/features/**/*
   Max: 10
 
 RSpec/MultipleExpectations:
